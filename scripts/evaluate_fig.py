@@ -113,8 +113,8 @@ def main():
     fig.colorbar(im, ax=ax_h, pad=0.02, fraction=0.045).ax.tick_params(labelsize=5)
     tag_panel(ax_h, "C", -0.13, 1.04)
 
-    fig.suptitle(args.title, fontsize=11, y=0.995)
-    fig.text(0.5, 0.952, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
+    fig.suptitle(args.title, fontsize=11, y=1.0)
+    fig.text(0.5, 0.935, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
     kw = dict(boxstyle="round,pad=0.45", facecolor="#F2F6FC", edgecolor=PALETTE["blue_main"], lw=0.9)
     fig.text(0.5, 0.028, "关键结论    最优方案为 %s（接近度 %.3f）；权重最大的指标为 %s（%.3f）；"
              "权重结构由数据信息量客观决定。" % (best, score.max(), crit_cols[ow[0]], w[ow[0]]),

@@ -96,8 +96,8 @@ def main():
     fig.colorbar(cf, ax=ax4, pad=0.02, fraction=0.055).ax.tick_params(labelsize=5)
     tag_panel(ax4, "D", -0.09, 1.03)
 
-    fig.suptitle(args.title, fontsize=11, y=0.995)
-    fig.text(0.5, 0.955, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
+    fig.suptitle(args.title, fontsize=11, y=1.0)
+    fig.text(0.5, 0.935, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
     kw = dict(boxstyle="round,pad=0.45", facecolor="#F2F6FC", edgecolor=PALETTE["blue_main"], lw=0.9)
     fig.text(0.5, 0.028, "关键结论    参数随 %s 与 %s 呈显著非线性变化；高敏感区集中在 %s 高值与 %s 交叠处；"
              "使用变参数建模比常数假设更能刻画真实特性。" % (x_name, y_name, y_name, x_name),

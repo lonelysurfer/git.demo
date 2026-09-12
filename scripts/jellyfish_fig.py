@@ -218,8 +218,8 @@ def main():
 
     for ax, tag, dx in [(ax_a, "A", -0.035), (ax_b, "B", -0.10), (ax_c, "C", -0.10), (ax_d, "D", -0.10)]:
         ax.text(dx, 1.05, tag, transform=ax.transAxes, fontsize=9, fontweight="bold")
-    fig.suptitle(args.title, fontsize=11, y=0.99)
-    fig.text(0.5, 0.945, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
+    fig.suptitle(args.title, fontsize=11, y=1.0)
+    fig.text(0.5, 0.935, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)

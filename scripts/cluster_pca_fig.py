@@ -116,8 +116,8 @@ def main():
     fig.colorbar(im, ax=ax_c, pad=0.02, fraction=0.045).ax.tick_params(labelsize=5)
     tag_panel(ax_c, "C", -0.13, 1.04)
 
-    fig.suptitle(args.title, fontsize=11, y=0.995)
-    fig.text(0.5, 0.952, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
+    fig.suptitle(args.title, fontsize=11, y=1.0)
+    fig.text(0.5, 0.935, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
     kw = dict(boxstyle="round,pad=0.45", facecolor="#F2F6FC", edgecolor=PALETTE["blue_main"], lw=0.9)
     fig.text(0.5, 0.028, "关键结论    数据在 k=%d 处呈现最清晰的簇结构（轮廓系数 %.3f）；"
              "PC1+PC2 累计解释 %.1f%% 方差，各簇在特征剖面上差异显著。"

@@ -106,8 +106,8 @@ def main():
         ax_c.set_title("出力结构占比", fontsize=8)
     tag_panel(ax_c, "C", -0.13, 1.04)
 
-    fig.suptitle(args.title, fontsize=11, y=0.995)
-    fig.text(0.5, 0.952, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
+    fig.suptitle(args.title, fontsize=11, y=1.0)
+    fig.text(0.5, 0.935, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
     kw = dict(boxstyle="round,pad=0.45", facecolor="#F2F6FC", edgecolor=PALETTE["blue_main"], lw=0.9)
     fig.text(0.5, 0.028, "关键结论    各主体出力结构覆盖需求全过程，总出力 %.0f；"
              "供给-需求最大偏差 %.1f，调度方案满足约束。" % (total.sum(), np.abs(total - df[args.demand_col]).max()

@@ -106,8 +106,8 @@ def main():
     # 发展系数结论（GM11 专用）
     extra = ("发展系数 -a = %.4f（%s），灰作用量 b = %.1f。"
              % (-a_g, "序列增长" if a_g < 0 else "序列衰减", b_g)) if args.method == "gm11" else ""
-    fig.suptitle(args.title, fontsize=11, y=0.995)
-    fig.text(0.5, 0.955, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
+    fig.suptitle(args.title, fontsize=11, y=1.0)
+    fig.text(0.5, 0.935, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
     kw = dict(boxstyle="round,pad=0.45", facecolor="#F2F6FC", edgecolor=PALETTE["blue_main"], lw=0.9)
     fig.text(0.5, 0.028, "关键结论    相对误差均值 %.2f%%；%s拟合质量等级 [%s]，可用于中短期预测。"
              % (np.mean(np.abs(resid / y)) * 100, extra, grade),

@@ -154,8 +154,8 @@ def main():
 
     for ax, tag, dx in [(ax_a, "A", -0.03), (ax_bs, "B", -0.07), (ax_bar, "C", -0.09), (ax_d, "D", -0.09)]:
         ax.text(dx, 1.05, tag, transform=ax.transAxes, fontsize=9, fontweight="bold")
-    fig.suptitle(args.title, fontsize=11, y=0.995)
-    fig.text(0.5, 0.952, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
+    fig.suptitle(args.title, fontsize=11, y=1.0)
+    fig.text(0.5, 0.935, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
     kw = dict(boxstyle="round,pad=0.45", facecolor="#F2F6FC", edgecolor=PALETTE["blue_main"], lw=0.9)
     concl = "    ".join("%s %s" % (a1, b1) for a1, b1 in zip("①②③", args.conclusions.split(";")))
     fig.text(0.5, 0.028, "关键结论    " + concl, ha="center", va="center", fontsize=6.3,

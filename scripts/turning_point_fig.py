@@ -154,8 +154,8 @@ def main():
         ax_d.text(0.18, yy - 0.26, desc, fontsize=4.8, va="center", transform=ax_d.transAxes)
     tag_panel(ax_d, "D", -0.02, 1.02)
 
-    fig.suptitle(args.title, fontsize=11, y=0.995)
-    fig.text(0.5, 0.952, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
+    fig.suptitle(args.title, fontsize=11, y=1.0)
+    fig.text(0.5, 0.935, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)

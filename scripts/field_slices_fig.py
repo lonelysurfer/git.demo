@@ -127,8 +127,8 @@ def main():
     tag4 = fig.add_axes([0.02, 0.335, 0.05, 0.05]); tag4.axis("off")
     tag4.text(0, 0.5, "D", fontsize=9, fontweight="bold")
 
-    fig.suptitle(args.title, fontsize=11, y=0.995)
-    fig.text(0.5, 0.962, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
+    fig.suptitle(args.title, fontsize=11, y=1.0)
+    fig.text(0.5, 0.935, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)

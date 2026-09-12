@@ -187,7 +187,7 @@ def main():
                   transform=ax_d.transAxes)
 
     fig.suptitle(args.title, fontsize=11, y=1.0)
-    fig.text(0.5, 0.962, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
+    fig.text(0.5, 0.935, args.subtitle, ha="center", fontsize=7.5, color=PALETTE["neutral_dark"])
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
